@@ -1,0 +1,16 @@
+<div class="col-md-6 offset-md-4">
+    <h3 style="margin-top: 16px;">Create Student</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)] = "student.name" id="name">
+        </div>
+        <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" class="form-control" name="city" [(ngModel)] = "student.city" id="city">
+        </div>
+
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+</div>
+

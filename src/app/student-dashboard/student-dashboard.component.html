@@ -1,0 +1,23 @@
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Student ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let student of students">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.city}}</td>
+            <td>
+                <button (click) = "updateStudent(student.id)" class="btn btn-info">Edit</button>
+                <button (click) = "deleteStudent(student.id)" class="btn btn-danger mx-3">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
